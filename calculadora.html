@@ -1,58 +1,91 @@
 <html>
 
-<div class="display">
-    <p class="texto-display">0</p>
-</div>
+<body>
 
-<div class="botoes">
 
-    <div class="numeros">
-            <button>0</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-    </div>
+        <div class="display">
+                <p class="texto-display">0</p>
+        </div>
 
-    <div class="operacoes">
-            <button>+</button>
-            <button>-</button>
-            <button>x</button>
-            <button>/</button>
-    </div>
+        <div class="botoes">
+
+                <div class="numeros">
+                        <div>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+
+                        </div>
+
+                        <div>
+                                <button>4</button>
+                                <button>5</button>
+                                <button>6</button>
+
+                        </div>
+
+                        <div>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+
+                        </div>
+
+                        <div>
+                                <button>0</button>
+                                <button>0</button>
+                                <button>0</button>
+
+                        </div>
+
+                </div>
+
+                <div class="operacoes">
+                        <button>+</button>
+                        <button>-</button>
+                        <button>x</button>
+                        <button>/</button>
+                </div>
+</body>
 
 <style>
-        .numeros button{
-                background-color: red;
-                color: white;
+        .numeros button {
+                background-color: rgb(241, 125, 197);
+                color: black;
                 font-size: 50px;
                 padding-left: 14px;
                 padding-right: 14px;
-                border-radius: 100%:
+                border-radius: 100%;
         }
 
-        .operacoes button{
-                background-color: blue;
-                color:white;
+        .operacoes button {
+                background-color: rgb(255, 0, 85);
+                color: black;
                 font-size: 50px;
                 padding-left: 14px;
                 padding-right: 14px;
+                border-radius: 40%;
+                display: block;
         }
 
-        .display{
+        .display {
                 border: solid black 2px;
                 border-radius: 8px;
+                background-color: white;
         }
 
-        .texto-display{
-            font-size: 50px;
+        .texto-display {
+                font-size: 50px;
         }
 
+        body {
+                background-color: rgb(255, 139, 162);
+        }
+
+        .botoes {
+                margin-left: 30%;
+                display: flex;
+        }
 </style>
 
 </html>
