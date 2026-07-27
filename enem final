@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas? Sugestões?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #1d70b8;
+        }
+
+        /* Seção Principal (Azul) */
+        .main-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px;
+            gap: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 450px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .text-container {
+            flex: 1;
+            max-width: 500px;
+            color: #ffffff;
+            text-align: right;
+        }
+
+        .text-container h1 {
+            font-family: 'Georgia', serif;
+            font-size: 3.5rem;
+            font-weight: normal;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .text-container p {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+
+        /* Rodapé (Preto/Cinza Escuro) */
+        footer {
+            background-color: #111622;
+            color: #ffffff;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            border-top: 1px solid #222a3d;
+        }
+
+        .footer-column {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .left-column {
+            text-align: center;
+        }
+
+        .right-column {
+            text-align: center;
+        }
+
+        .school-name {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .text-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .text-container h1 {
+                font-size: 2.5rem;
+            }
+
+            .text-container p {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .left-column, .right-column {
+                text-align: center;
+                max-width: 100%;
+            }
+        }
+
+        img {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Seção Principal -->
+    <main class="main-container">
+
+        <div>
+            <img src="https://i.imgur.com/TwlQerR.png">
+        </div>
+        
+        <!-- Bloco de Texto -->
+        <div class="text-container">
+            <h1>Dúvidas?<br>Sugestões?</h1>
+            <p>Entre em contato conosco usando um de nossos canais.</p>
+        </div>
+
+    </main>
+
+    <!-- Rodapé de Contatos -->
+    <footer>
+        
+        <!-- Coluna do Endereço -->
+        <div class="footer-column left-column">
+            <p class="school-name">Colégio RUI BARBOSA</p>
+            <p>Rua das Acácias, 123, Apt. 45</p>
+            <p>Bairro Jardim das Flores</p>
+            <p>Cidade: São Paulo</p>
+            <p>Estado: SP</p>
+            <p>CEP: 04567-890</p>
+        </div>
+
+        <!-- Coluna dos Canais Digitais -->
+        <div class="footer-column right-column">
+            <p>Tel.: (12) 3456-7890</p>
+            <br>
+            <p>E-mail: enem.2027@gmail.com.br</p>
+            <p>Redes sociais: @enem2027</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
