@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que esperar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            background-color: #2ecc71;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* Lado Esquerdo (Verde) */
+        .left-side {
+            background-color: #2ecc71; /* Cor verde aproximada */
+            color: #000000;
+            width: 50%;
+            padding: 10% 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        /* Logotipo feito com CSS simples */
+        .logo {
+            display: grid;
+            grid-template-columns: repeat(3, 25px);
+            grid-template-rows: repeat(3, 25px);
+            gap: 2px;
+            margin-bottom: auto;
+        }
+
+        .pixel { background-color: transparent; }
+        .pixel.fill { background-color: #ffffff; }
+
+        .content {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .content p {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            font-weight: 500;
+            max-width: 450px;
+        }
+
+        /* Lado Direito (Imagem) */
+        .right-side {
+            width: 50%;
+            background-image: url('SUA_IMAGEM_AQUI.jpg'); /* Substitua pelo link da imagem dos estudantes */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-side, .right-side {
+                width: 100%;
+                height: 50vh;
+            }
+            .content h1 {
+                font-size: 2.5rem;
+            }
+            .content p {
+                font-size: 1.1rem;
+            }
+            .logo {
+                margin-bottom: 40px;
+            }
+        }
+
+        img{
+            width: 80%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Painel Verde -->
+        <div class="left-side">
+            <!-- Ícone/Logo do topo -->
+            <div class="logo">
+                <div class="pixel fill"></div>
+                <div class="pixel"></div>
+                <div class="pixel"></div>
+                
+                <div class="pixel fill"></div>
+                <div class="pixel fill"></div>
+                <div class="pixel"></div>
+                
+                <div class="pixel"></div>
+                <div class="pixel fill"></div>
+                <div class="pixel fill"></div>
+            </div>
+
+            <!-- Texto Principal -->
+            <div class="content">
+                <h1>O que esperar</h1>
+                <p>Vagas limitadas para quem quer transformar estudo em resultado!</p>
+            </div>
+        </div>
+
+        <!-- Painel da Imagem -->
+        <div class="right-side">
+            <img src="https://i.imgur.com/e2EQPAv.png">
+        </div>
+
+    </div>
+
+</body>
+</html>
